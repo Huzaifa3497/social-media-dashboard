@@ -1,0 +1,23 @@
+{
+  "name": "social-media-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "facebook-node-sdk": "^0.2.0",
+    "fb": "^2.0.0",
+    "tiktok-api": "^0.4.1",
+    "twitter-api-v2": "^1.23.2",
+    "youtube-api": "^3.0.2"
+  }
+}

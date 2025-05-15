@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #3B82F6; /* Bright blue */
+  --secondary-color: #EC4899; /* Vibrant pink */
+  --background-color: #F8FAFC; /* Light slate */
+  --card-background: #FFFFFF; /* White */
+  --text-primary: #1E293B; /* Dark slate */
+  --text-secondary: #64748B; /* Medium slate */
+  --twitter-color: #1DA1F2; /* Twitter blue */
+  --facebook-color: #1877F2; /* Facebook blue */
+  --instagram-color: #E1306C; /* Instagram pink */
+  --tiktok-color: #000000; /* TikTok black */
+  --youtube-color: #FF0000; /* YouTube red */
+  --chart-color-1: #3B82F6; /* Blue */
+  --chart-color-2: #10B981; /* Emerald */
+  --chart-color-3: #8B5CF6; /* Purple */
+  --chart-color-4: #F59E0B; /* Amber */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h6 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.MuiCard-root {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-4px);
+}
+
+.MuiButton-contained {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.MuiButton-contained:hover {
+  background: linear-gradient(45deg, #2563EB, #DB2777);
+}
+
+.MuiTableCell-root {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.MuiFormLabel-root {
+  color: var(--text-secondary);
+}
+
+.MuiSelect-select {
+  color: var(--text-primary);
+}
+
+.sidebar {
+  background-color: var(--card-background);
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.collapsed {
+  margin-left: 80px;
+}
+
+.platform-icon {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
